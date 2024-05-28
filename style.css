@@ -1,0 +1,102 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+svg {
+    width: 70%;
+    height: 100%;
+    /* outline: 1px solid red; */
+}
+
+.renderingDiv {
+    /* padding: 20px; */
+    width: 100%;
+    height: 100%;
+    border: 1px solid skyblue;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.allCtrls{
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom: 1px solid black;
+}
+
+.mnCtrls {
+    width: 100%;
+    padding: 30px;
+    height: 100px;
+    overflow: hidden;
+    transition: 1s;
+
+    h3 {
+        margin-top: 30px;
+        cursor: pointer;
+    }
+}
+
+.rotateXParent, .rotateYParent, .rotateZParent {
+    padding: 20px;
+}
+
+.rotateX, .rotateY, .rotateZ{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    #rotateXValue {
+        display: inline-block;
+        /* border: 1px solid black; */
+        min-width: 40px;
+    }
+
+    #rotateYValue {
+        display: inline-block;
+        min-width: 40px;
+    }
+
+    #rotateZValue{
+        display: inline-block;
+        min-width: 40px;
+    }
+}
+
+.cameraCtrls{
+    padding: 30px;
+    height: 100px;
+    transition: 1s;
+    overflow: hidden;
+
+    h3{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+.cameraX, .cameraY, .cameraZ{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#cameraX, #cameraY, #cameraZ{
+    display: inline-block;
+    width: 60px;
+}
+
